@@ -1,0 +1,30 @@
+    #include <iostream>
+    using namespace std;
+    int main() {
+       string CountryCode;
+       cout<<"Enter country code out of these (IN/NZ/US): ";
+       cin>>CountryCode;
+       
+       for(auto&ch : CountryCode)
+       {
+           ch = toupper(ch);
+       }
+       if(CountryCode == "IN")
+       {
+           cout<<"Adjacent Countries: Pakistan, China, Nepal, Bhutan, Bangladesh, Myanmar"<<endl;
+       }
+       else if(CountryCode =="US")
+       {
+           cout<<"Canada, Mexico"<<endl;
+       }
+       else if(CountryCode == "NZ")
+       {
+           cout<<"Adjacent Countries: No adjacent countries its a island nation"<<endl;
+       }
+       else
+       {
+           cout<<"Please enter country name out of these only : US/NZ/IND"<<endl;
+       }
+    
+        return 0;
+    }
